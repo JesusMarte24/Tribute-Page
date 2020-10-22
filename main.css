@@ -5,6 +5,9 @@
 }
 
 html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
     font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
     line-height: 1.5;
     font-size: 14px;
@@ -13,23 +16,170 @@ html {
 
 body {
     background-color: var(--first-color);
+    overflow-x: hidden;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 5px;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .header {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.menu__icon {
+    align-self: center;
+    margin-top: 0px;
+}
+
+.menu__icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: rgb(30, 31, 38);
+    overflow-x: hidden; 
+    padding-top: 45px;
+    transition: 0.5s; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 20px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.sidenav .closebtn:hover {
+    color: #47cf73;
+    background-color: transparent;
+}
+
+.line--0 {
+    width: 188px;
+    /* border: 2px solid white;
+    border-radius: 15px; */
+    margin: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.35));
+}
+
+.header__menu--tittle{
+    color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .01rem;
+    font-weight: 300;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.header__menu--button {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #000;
+    border-radius: 3px;
+    margin: 15px;
+    margin-top: 0px;
+    height: 41px;
+    transition: background .5s ease;
+    align-self: center;
+    color: white;
+    width: 144px;
+    border-top: 2px solid #fad648;
+    border-right: 2px solid #12bcfe;
+    border-bottom: 2px solid #a767e5;
+    border-left: 2px solid #4fcf70;
+    border-radius: 5px;
+}
+
+.header__menu--button:hover{
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+}
+
+.header__menu--button:active {
+    transform: translateY(-0.1rem);
+}
+
+.line--1 {
+    width: 144px;
+    height: 0px;
+    border: 2px solid #47cf73;
+    border-radius: 15px;
+    margin: 5px;
+    align-self: center;
+}
+
+
+.line--2 {
+    width: 144px;
+    height: 0px;
+    border: 2px solid #ffdd40;
+    border-radius: 15px;
+    margin: 5px;
+    align-self: center;
+}
+
+.span__pro {
+    background-color: #ffdd40;
+    color: black;
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: 400;
 }
 
 .header__input--box{
-    width: 78vw;
-    margin: 10px 10px;
-    height: 44px;
     display: flex;
+    width: 95vw;
+    margin: 5px 10px 10px 10px;
+    height: 44px;
+    justify-content: center;
+    align-content: center;
     position: relative;
+    padding: 0px;
 }
 
-.header__input--box::after {
+
+.header__input--box::before {
     content: url('./assets/lupa.png');
     position: absolute;
     left: 14px;
@@ -62,18 +212,16 @@ body {
     font-size: 16px;
 }
 
-
-button {
-    width: 80px;
+.button {
+    width: 90px;
     font-weight: 600;
     border: 0px;
     cursor: pointer;
     opacity: 0.9;
     border-radius: 6px;
-    height: 44px;
-    margin: 8px 8px;
-    margin-top: 10px;
+    height: 100%;
     padding: 10px 10px;
+    align-self: center;
 }
 
 button:focus{
@@ -82,6 +230,7 @@ button:focus{
 
 .header__button--sign{
     background-color: 	#47cf73;  
+    margin-left: 20px;
 }
 
 .header__button--sign:hover {
@@ -91,6 +240,8 @@ button:focus{
 .header__button--log{
     background: #444857;
     color: white;
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
 .header__button--log:hover {
@@ -99,11 +250,11 @@ button:focus{
 
 .main {
     height: 95vh;
-    width: 93vw;
-    position: absolute;
+    width: 98vw;
+    position: relative;
     right: 0px;
-    margin: 8px 15px auto auto;
-    background-image: linear-gradient(to left, rgba(19, 19, 19, 0.9), rgba(39, 41, 39, 0.8), rgba(255,0,0,0)), url('./assets/tumblr-safe-mode-header.jpg');
+    margin: 8px 0px auto 0px;
+    background-image: linear-gradient(to left, rgba(41, 41, 41, 0.9), rgba(39, 41, 39, 0.74), rgba(255, 255, 255, 0)), url('./assets/tumblr-safe-mode-header.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -116,7 +267,7 @@ button:focus{
     display: flex;
     justify-content: flex-start;
     align-content: center;
-    width: 46rem;
+    width: 47rem;
     flex-wrap: wrap;
 }
 
@@ -168,6 +319,10 @@ button:focus{
     opacity: 1;
 }
 
+  /* @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
 
 
 

@@ -10,19 +10,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>CodePen PRO</title>
 </head>
-<body>
+<body id="main">
     <header class="header">
-        <div class="header__input--box"><input type="text" class="header__input" placeholder="Search CodePen..."></div>
-        <button type="button" class="header__button--sign button">Sign Up</button>
-        <button type="button" class="header__button--log button">Log In</button>
+        
+        <div class="header__menu">
+            <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <hr class="line--0">
+                <img src="./assets/codepen.png" alt="Logo Codepen" width="188px;" height="40px;">
+                <h3 class="header__menu--tittle">TRY OUR ONLINE EDITOR</h3>
+                <button class="header__menu--button">Star Coding</button>
+                <hr class="line--1">
+                <a href="#">Trending</a>
+                <a href="#">Topics</a>
+                <a href="#">Challenge</a>
+                <hr class="line--2">
+                <a href="#">CodePen <span class="span__pro">PRO<span></a>
+            </nav>
+        </div>
+
+        <img class="menu__icon" onclick="openNav()" src="./assets/menu.png" width="38px" height="36px">
+
+        <div class="header__input--box">
+            <input type="text" class="header__input" placeholder="Search CodePen...">
+            <button type="button" class="header__button--sign button">Sign Up</button>
+            <button type="button" class="header__button--log button">Log In</button>
+        </div>
+
     </header>
     <main class="main">
         <div class="main__container">
-            <h1 class="main__tittle">Unlock the full power of</br>CodePen <a href="#" class="main__label--1">PRO</a></h1>
+            <h1 class="main__tittle">Unlock the full power of</br>CodePen <span class="main__label--1">PRO</span></h1>
         </br>
         <p class="main__paragraph">Get every feature CodePen has to offer starting at $8/month and</br>start building code faster and easier</br></br><a href="#" class="main__label--2">Sing Up Now</a></p>
         </div>
-        
     </main>
+    
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "188px";
+        document.getElementById("main").style.marginLeft = "188px";
+    }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+
+    </script>
 </body>
 </html>
