@@ -103,7 +103,7 @@ button:focus{
     position: absolute;
     right: 0px;
     margin: 8px 15px auto auto;
-    background-image: linear-gradient(to left, rgba(29, 29, 29, 0.9), rgba(39, 41, 39, 0.8), rgba(255,0,0,0)), url('./assets/tumblr-safe-mode-header.jpg');
+    background-image: linear-gradient(to left, rgba(19, 19, 19, 0.9), rgba(39, 41, 39, 0.8), rgba(255,0,0,0)), url('./assets/tumblr-safe-mode-header.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -138,10 +138,11 @@ button:focus{
     height: 40px;
     text-decoration: none;
     font-weight: 900;
+    cursor: text;
 }
 
 .main__paragraph {
-    color: rgb(206, 206, 206);
+    color: rgb(216, 216, 216);
     font-weight: 300;
     font-size: 1.4rem;
     margin-top: -15px;
