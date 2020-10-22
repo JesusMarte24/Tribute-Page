@@ -7,7 +7,7 @@
 html {
     font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .header__input--box{
-    width: 75%;
+    width: 78vw;
     margin: 10px 10px;
     height: 44px;
     display: flex;
@@ -57,9 +57,9 @@ body {
 }
 
 .header__input::placeholder{
-    font-weight: 600px;
     justify-content: flex-start;
-    color: rgb(178, 222, 236, 0.5)
+    color: rgb(180, 179, 177);
+    font-size: 16px;
 }
 
 
@@ -96,6 +96,78 @@ button:focus{
 .header__button--log:hover {
     background: #5a6074;
 }
+
+.main {
+    height: 95vh;
+    width: 93vw;
+    position: absolute;
+    right: 0px;
+    margin: 20px 15px auto auto;
+    background-image: linear-gradient(to left, rgba(39, 41, 39, 0.9), rgba(39, 41, 39, 0.8), rgba(255,0,0,0)), url('./assets/tumblr-safe-mode-header.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.main__container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 46rem;
+    flex-wrap: wrap;
+}
+
+.main__tittle{
+    color: white;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.main__label--1 {
+    background: #ffdd40;
+    border-radius: 4px;
+    font-size: 2.4rem;
+    line-height: 95%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.625rem 1rem 0.25rem;
+    color: #000000;
+    height: 40px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.main__paragraph {
+    color: rgb(206, 206, 206);
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: -15px;
+}
+
+.main__label--2 {
+    background: #ffd40d;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: capitalize;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    line-height: 95%;
+    padding: 10px 20px 12px;
+    font-size: 17.5px;
+    opacity: 0.9;
+
+}
+
+.main__label--2:hover {
+    opacity: 1;
+}
+
+
 
 
 
