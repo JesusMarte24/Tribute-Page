@@ -325,14 +325,14 @@ button:focus{
     justify-content: space-evenly;
     width: 92vw;
     border: 1px solid transparent;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: auto;
+    margin-top: -2rem;
+    position: relative;
 }
 
 .main__cards {
-    background-color: rgb(68, 72, 87, 0.5);
-    opacity: 0.9;
+    background-color: rgb(43, 47, 59);
+    /* opacity: 0.9; */
     padding: 1rem;
     border: 1px solid transparent;
     width: 33%;
@@ -355,8 +355,8 @@ button:focus{
 }
 
 #card--1{
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
 }
 
 #card--2{
@@ -365,8 +365,8 @@ button:focus{
 }
 
 #card--3{
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
 }
 
   /* @media screen and (max-height: 450px) {
