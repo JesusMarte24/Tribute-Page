@@ -333,7 +333,7 @@ button:focus{
 .main__cards {
     background-color: rgb(43, 47, 59);
     /* opacity: 0.9; */
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     border: 1px solid transparent;
     width: 33%;
 }
@@ -342,9 +342,8 @@ button:focus{
     font-size: 1.25rem;
     color: white;
     font-weight: bold;
-    border-bottom: 1px solid white;
-    padding: 7px;
-    padding-top: 1px;
+    border-bottom: 0.9px solid white;
+    padding: 1px 7px 10px 7px;
 }
 
 .main__cards p {
@@ -352,11 +351,12 @@ button:focus{
     text-align: justify;
     color: #c7c9d3;
     padding: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 #card--1{
-    border-top-left-radius: 0.8rem;
-    border-bottom-left-radius: 0.8rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 }
 
 #card--2{
@@ -365,8 +365,8 @@ button:focus{
 }
 
 #card--3{
-    border-top-right-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
 }
 
   /* @media screen and (max-height: 450px) {
