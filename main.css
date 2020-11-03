@@ -255,7 +255,7 @@ button:focus{
     position: relative;
     right: 0px;
     margin: 8px 0px auto 0px;
-    background-image: linear-gradient(to left, rgba(41, 41, 41, 0.9), rgba(39, 41, 39, 0.74), rgba(255, 255, 255, 0)), url('./assets/tumblr-safe-mode-header.jpg');
+    background-image: linear-gradient(to left, rgba(41, 41, 41, 0.9), rgba(39, 41, 39, 0.74), rgba(255, 255, 255, 0)), url('./assets/main--background.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
