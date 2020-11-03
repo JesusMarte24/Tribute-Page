@@ -31,6 +31,7 @@ body {
 .menu__icon {
     align-self: center;
     margin-top: 0px;
+    margin-left: 0.25rem;
 }
 
 .menu__icon:hover {
@@ -48,7 +49,7 @@ body {
     background-color: rgb(30, 31, 38);
     overflow-x: hidden; 
     padding-top: 45px;
-    transition: 0.5s; 
+    transition: 0.3s; 
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -59,7 +60,7 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    transition: 0.3s;
+    transition: 0.2s;
     font-size: 1rem;
     font-weight: 400;
     height: 20px;
@@ -245,7 +246,7 @@ button:focus{
 }
 
 #main {
-    transition: margin-left .5s;
+    transition: margin-left .4s;
     padding: 5px;
     padding-left: 0px;
     margin-left: 0px;
