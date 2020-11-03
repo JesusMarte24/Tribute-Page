@@ -114,7 +114,7 @@ body {
     margin: 15px;
     margin-top: 0px;
     height: 41px;
-    transition: background .5s ease;
+    transition: .2s;
     align-self: center;
     color: white;
     width: 144px;
@@ -225,6 +225,7 @@ button:focus{
 .header__button--sign{
     background-color: 	#47cf73;  
     margin-left: 20px;
+    transition: 0.2s;
 }
 
 .header__button--sign:hover {
@@ -236,6 +237,7 @@ button:focus{
     color: white;
     margin-left: 20px;
     margin-right: 0px;
+    transition: 0.2s;
 }
 
 .header__button--log:hover {
@@ -299,6 +301,7 @@ button:focus{
     font-weight: 300;
     font-size: 1.4rem;
     margin-top: -15px;
+    transition: 0.2s;
 }
 
 .main__label--2 {
@@ -314,11 +317,17 @@ button:focus{
     padding: 10px 20px 12px;
     font-size: 17.5px;
     opacity: 0.9;
+    transition: 0.2s;
 
 }
 
 .main__label--2:hover {
     opacity: 1;
+    transform: translateY(0.3rem);
+}
+
+.main__label--2:active {
+    transform: translateY(-0.1rem);
 }
 
 .main__cards--container{
@@ -368,6 +377,76 @@ button:focus{
 #card--3{
     border-top-right-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
+}
+
+.privacy {
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+    border: 1px solid transparent;
+    margin: 4rem auto auto auto;
+}
+
+.privacy__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 3.5rem;
+}
+
+.privacy__left--top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.privacy__left--h2{
+    color: #0ebeff;
+    font-weight: 300;
+    font-size: 1.325rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacy__left--tittle{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0px auto 0 auto;
+}
+
+.privacy__left--paragraph{
+    color: #c7c9d3;
+    font-size: 1.2rem;
+    margin: 0.9rem auto 1.8 auto;
+
+}
+
+.privacy__left--button {
+    color: #ffffff;
+    background-color: #444857;
+    text-align: center;
+    width: 170px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    transition: 0.2s;
+    margin-top: 1rem;
+}
+
+.privacy__left--button:hover{
+    background-color: #5a6074;
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+}
+
+.privacy__left--button:active {
+    transform: translateY(-0.1rem);
+}
+
+.privacy__right--container img {
+    width: 300px;
 }
 
   /* @media screen and (max-height: 450px) {
