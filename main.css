@@ -49,7 +49,7 @@ body {
     background-color: rgb(30, 31, 38);
     overflow-x: hidden; 
     padding-top: 45px;
-    transition: 0.3s; 
+    transition: 0.5s; 
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -60,7 +60,7 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    transition: 0.2s;
+    transition: 0.4s;
     font-size: 1rem;
     font-weight: 400;
     height: 20px;
@@ -392,7 +392,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 53%;
     margin-left: 3.5rem;
 }
 
@@ -400,6 +400,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 1rem;
 }
 
 .privacy__left--h2{
@@ -418,8 +419,9 @@ button:focus{
 
 .privacy__left--paragraph{
     color: #c7c9d3;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0.9rem auto 1.8 auto;
+    text-align: justify;
 
 }
 
@@ -433,7 +435,8 @@ button:focus{
     border-radius: 4px;
     font-size: 1.125rem;
     transition: 0.2s;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    /* padding: 1rem; */
 }
 
 .privacy__left--button:hover{
@@ -446,9 +449,50 @@ button:focus{
     transform: translateY(-0.1rem);
 }
 
+.privacy__left--bottom{
+    margin: 0.9rem auto auto auto;
+}
+
+.privacy__left--list{
+    color: #c7c9d3;
+    list-style-type: none;
+    margin: 10px auto auto 20px;
+
+}
+
+.privacy__left--list li {
+    font-size: 1.3rem;
+    margin: 1.2rem auto 1.2rem auto;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.privacy__left--list li span{
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.privacy__list--item{
+    position: relative; 
+}
+
+.privacy__list--item::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    position: absolute; 
+    left: -42px; 
+    top: 1.1rem;
+    background: #0ebeff;
+}
+
 .privacy__right--container img {
     width: 300px;
 }
+
 
   /* @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
