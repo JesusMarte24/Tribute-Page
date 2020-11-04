@@ -12,11 +12,13 @@ html {
     line-height: 1.5;
     font-size: 14px;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--first-color);
     overflow-x: hidden;
+    margin: 1rem;
 }
 
 
@@ -489,8 +491,30 @@ button:focus{
     background: #0ebeff;
 }
 
+.privacy__right{
+    width: 470px;
+    position: relative;
+}
+
+.privacy__right--container{
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 1.8rem;
+}
+
 .privacy__right--container img {
-    width: 300px;
+    width: 470px;
+    border-radius: 0.5rem;
+}
+
+.privacy__right--subtittle {
+    color: white;
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    padding-left: 5px;
 }
 
 
