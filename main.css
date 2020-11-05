@@ -140,7 +140,7 @@ body {
 .line--1 {
     width: 144px;
     height: 0px;
-    border: 2px solid #47cf73;
+    border: 3px solid #47cf73;
     border-radius: 15px;
     margin: 5px;
     align-self: center;
@@ -150,7 +150,7 @@ body {
 .line--2 {
     width: 144px;
     height: 0px;
-    border: 2px solid #ffdd40;
+    border: 3px solid #ffdd40;
     border-radius: 15px;
     margin: 5px;
     align-self: center;
@@ -526,10 +526,15 @@ button:focus{
     margin: 5rem 0rem 5rem 1rem;
 }
 
+.suggestion__container--lines{
+    border-left: 2px solid  #ffd40d;
+    height: 250px;
+    /* position: relative; */
+    transform: translateX(50%);
+}
+
 .suggestion__container div {
     width: 500px;
-    /* border: 1px solid red; */
-
 }
 
 .suggestion__container h4 {
@@ -548,8 +553,12 @@ button:focus{
     line-height: 95%;
     padding: 10px 14px 10px;
     opacity: 0.9;
-    transition: 0.2s;
+    transition: 0.3s;
     margin-left: 4px;
+}
+
+.suggestion__container h4 a:hover {
+    opacity: 1;
 }
 
 .suggestion__container p {
