@@ -387,7 +387,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 53%;
+    width: 46%;
     margin-left: 3.5rem;
 }
 
@@ -414,7 +414,7 @@ button:focus{
 
 .privacy__left--paragraph{
     color: #c7c9d3;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0.9rem auto 1.8 auto;
     text-align: justify;
 
@@ -485,7 +485,7 @@ button:focus{
 }
 
 .privacy__right{
-    width: 470px;
+    width: 45%;
     position: relative;
 }
 
@@ -499,8 +499,10 @@ button:focus{
 }
 
 .privacy__right--container img {
-    width: 470px;
+    width: 100%;
     border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: top;
 }
 
 .privacy__right--subtittle {
