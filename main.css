@@ -139,29 +139,22 @@ body {
 
 .line--1 {
     width: 144px;
-    height: 0px;
-    border: 3px solid #47cf73;
-    border-radius: 15px;
     margin: 5px;
+    margin-bottom: 10px;
     align-self: center;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,rgb(71, 207, 115), rgb(71, 207, 115), rgb(71, 207, 115));
 }
-
 
 .line--2 {
     width: 144px;
-    height: 0px;
-    border: 3px solid #ffdd40;
-    border-radius: 15px;
     margin: 5px;
+    margin-bottom: 10px;
     align-self: center;
-}
-
-.span__pro {
-    background-color: #ffdd40;
-    color: black;
-    padding: 3px;
-    border-radius: 4px;
-    font-weight: 400;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,rgb(255, 221, 64), rgb(255, 221, 64), rgb(255, 221, 64));
 }
 
 .header__input--box{
