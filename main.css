@@ -649,17 +649,19 @@ button:focus{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-shrink: 1;
 }
 
 .card--example{
     border-radius: 0.6rem;
-    border: 1px solid rgb(14, 190, 255, 0.6);
+    border: 2px solid transparent;
     width: 230px;
     height: 380px;
+    box-shadow: 0px 1px 0px 0px #FFFFFF;
 }
 
 .example__img{
-    border: 1px solid rgb(14, 190, 255, 0.6);
+    border: 1px solid white;
     border-radius: 2px;
     width: 200px;
     height: 200px;
