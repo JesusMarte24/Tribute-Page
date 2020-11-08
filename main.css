@@ -378,7 +378,7 @@ button:focus{
 .privacy {
     display: flex;
     justify-content: space-between;
-    width: 92vw;
+    width: 1150px;
     border: 1px solid transparent;
     margin: 4rem auto auto auto;
 }
@@ -562,12 +562,14 @@ button:focus{
     margin-top: 1rem;
 }
 
-.assets{
+.assets__container{
     display: flex;
     justify-content: center;
     flex-grow: 1;
     flex-grow: 1;
     margin-top: 1.5rem;
+    width: 1150px;
+    margin: auto;
 }
 
 .assets__left{
