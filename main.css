@@ -654,14 +654,21 @@ button:focus{
 
 .card--example{
     border-radius: 0.6rem;
-    border: 2px solid transparent;
+    border: 1px solid #ffdd40;
     width: 230px;
     height: 380px;
-    box-shadow: 0px 1px 0px 0px #FFFFFF;
+    box-shadow: 0px 2.3px 0px 0px #FFFFFF;
+}
+
+.card--example:hover {
+    /* transform: translateY(-5px); */
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .example__img{
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 2px;
     width: 200px;
     height: 200px;
@@ -889,11 +896,105 @@ button:focus{
     transform: translateY(-1px);
 }
 
+.plans__container {
+    width: 1100px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.plans__container--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid green;
+    width: 100%;
+    align-items: center;
+}
+
+.plans__container--header h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.plans__container--header div {
+    display: flex;
+    justify-content: space-around;
+    height: 115px;
+    width: 380px;
+    position: relative;
+}
+
+.plan--selection {
+    background-color: #9b9dad;
+    width: 50%;
+    height: 100%;
+    border: 1px solid transparent;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    line-height: 12rem;
+    position: relative;
+}
+
+.plan--selection:hover {
+    background-color:#a9abb8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* .individual--actived{
+    background-color: #47cf73;
+    transform: translateY(3px);
+    border: 2px solid black;
+} */
+
+#plan--selection--1 {
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+#plan--selection--1::before {
+    content: url(./assets/individual.png);
+    position: absolute;
+    top: -25.5px;
+    left: 76px; 
+}
+
+/* .team--actived {
+    background-color:#ffdd40;
+    transform: translateY(3px);
+    border: 2px solid black;
+} */
+
+#plan--selection--2 {
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
 
 
 
+#plan--selection--2::before {
+    content: url(./assets/team.png);
+    position: absolute;
+    top: -25.5px;
+    right: 78px;
+}
 
+.individual__top {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.individual__all--cards{
+    border: 1px solid yellow;
+}
 
 
 
