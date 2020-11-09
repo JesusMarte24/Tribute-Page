@@ -669,10 +669,6 @@ button:focus{
 }
 
 
-.card--middle{
-    
-}
-
 .collab__mode--container {
     display: flex;
     position: relative;
@@ -894,6 +890,16 @@ button:focus{
 }
 
 
+
+
+
+
+
+
+
+.plans__team {
+    display: none;
+}
 /* 390x400 */
 
   /* @media screen and (max-height: 450px) {
