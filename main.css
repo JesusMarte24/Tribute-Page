@@ -944,18 +944,33 @@ button:focus{
 .plan--selection:hover {
     background-color:#a9abb8;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
-/* .individual--actived{
-    background-color: #47cf73;
-    transform: translateY(3px);
-    border: 2px solid black;
-} */
+
 
 #plan--selection--1 {
     border-bottom-left-radius: 1rem;
     border-top-left-radius: 1rem;
+}
+
+.individual--actived{
+    background-color: #47cf73;
+    transform: translateY(3px);
+    border: 2px solid black;
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    line-height: 12rem;
+    position: relative;
+    transition: 0.2s;
+}
+
+.individual--actived:hover {
+    cursor: pointer;
 }
 
 #plan--selection--1::before {
@@ -965,17 +980,26 @@ button:focus{
     left: 76px; 
 }
 
-/* .team--actived {
-    background-color:#ffdd40;
-    transform: translateY(3px);
-    border: 2px solid black;
-} */
-
 #plan--selection--2 {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 1rem;
 }
 
+.team--actived {
+    background-color:#ffdd40;
+    transform: translateY(3px);
+    border: 2px solid black;
+    width: 50%;
+    height: 100%;
+    font-size: 1.3rem;
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    line-height: 12rem;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+}
 
 
 #plan--selection--2::before {
