@@ -898,11 +898,11 @@ button:focus{
 
 .plans__container {
     width: 1100px;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-top: -2.5rem;
     flex-direction: column;
 }
 
@@ -910,7 +910,6 @@ button:focus{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 1px solid green;
     width: 100%;
     align-items: center;
 }
@@ -946,8 +945,6 @@ button:focus{
     cursor: pointer;
     transition: 0.2s;
 }
-
-
 
 #plan--selection--1 {
     border-bottom-left-radius: 1rem;
@@ -1010,17 +1007,114 @@ button:focus{
 }
 
 .individual__top {
-    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.individual__all--cards{
-    border: 1px solid yellow;
+.plans__individual {
+    width: 1000px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 1.5rem;
 }
 
+.individual__all--cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 8px solid red;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    margin-top: 1.1rem;
+    width: 23%;
+}
 
+.individual__all--cards h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.individual__all--cards sup {
+    font-size: 1.5rem;
+    margin: 2px;
+}
+
+.individual__all--cards strong{
+    color: black;
+    font-size: 2rem;
+}
+
+.individual__all--cards span {
+    font-size: 1.2rem;
+    color: #9b9dad;
+}
+
+.individual__all--cards p {
+    font-size: 1.1rem;
+    color:  #9193a3;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.individual__all--cards button {
+    margin-top: 3rem;
+    color: #ffffff;
+    background-color: #444857;
+    text-align: center;
+    width: 130px;
+    height: 45px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 1.125rem;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.individual__all--cards button:hover{
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+} 
+
+.individual__all--cards button:active {
+    transform: translateY(-1px);
+    border: 2px solid black;
+}
+
+.individual__card--1 {
+    border-top-color:  #444857;
+}
+
+.individual__card--1 button:active {
+    border-color: black;
+}
+
+.individual__card--2{
+    border-top-color:  #0ebeff;
+}
+
+.individual__card--2 button {
+    background-color:  #0ebeff;
+}
+
+.individual__card--3{
+    border-top-color:  #ae63e4;
+}
+
+.individual__card--3 button {
+    background-color: #ae63e4;
+}
+
+.individual__card--4{
+    border-top-color:  #47cf73;
+}
+
+.individual__card--4 button {
+    background-color: #47cf73;
+}
 
 .plans__team {
     display: none;
