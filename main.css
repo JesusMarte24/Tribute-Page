@@ -1087,6 +1087,8 @@ button:focus{
 
 .individual__card--1 {
     border-top-color:  #444857;
+    box-shadow: 0px 2px 1px 0px  #444857;
+
 }
 
 .individual__card--1 button:active {
@@ -1095,6 +1097,7 @@ button:focus{
 
 .individual__card--2{
     border-top-color:  #0ebeff;
+    box-shadow: 0px 2px 1px 0px #00B2F4;
 }
 
 .individual__card--2 button {
@@ -1103,6 +1106,7 @@ button:focus{
 
 .individual__card--3{
     border-top-color:  #ae63e4;
+    box-shadow: 0px 2px 1px 0px #ae63e4;
 }
 
 .individual__card--3 button {
@@ -1111,6 +1115,7 @@ button:focus{
 
 .individual__card--4{
     border-top-color:  #47cf73;
+    box-shadow: 0px 2px 1px 0px #47cf73;
 }
 
 .individual__card--4 button {
@@ -1125,7 +1130,7 @@ button:focus{
 
 .individual__bottom div {
     width: 23%;
-    margin-top: 1.1rem;
+    margin-top: 1.3rem;
     color: black;
     font-size: 1.200rem;
     line-height: 1.5;
@@ -1133,6 +1138,55 @@ button:focus{
 
 .individual__bottom li {
     list-style: none;
+    position: relative;
+}
+
+.individual__ul--1 li::before {
+    position: absolute;
+    content: url(./assets/checked--gray.png);
+    top: 2px;
+    left: -22px;
+}
+.individual__ul--2 li::before {
+    position: absolute;
+    content: url(./assets/checked--blue.png);
+    top: 2px;
+    left: -22px;
+}
+
+.individual--li--2:first-child::before{
+ position: absolute;
+ content: url(./assets/back--blue.png);
+ top: 3px;
+ left: -22px;
+}
+
+.individual__ul--3 li::before {
+    position: absolute;
+    content: url(./assets/checked--purple.png);
+    top: 2px;
+    left: -22px;
+}
+
+.individual--li--3:first-child::before{
+ position: absolute;
+ content: url(./assets/back--purple.png);
+ top: 2px;
+ left: -22px;
+}
+
+.individual__ul--4 li::before {
+    position: absolute;
+    content: url(./assets/checked--green.png);
+    top: 2px;
+    left: -22px;
+}
+
+.individual--li--4:first-child::before{
+ position: absolute;
+ content: url(./assets/back--green.png);
+ top: 2px;
+ left: -22px;
 }
 
 .plans__team {
