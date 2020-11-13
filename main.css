@@ -665,7 +665,7 @@ button:focus{
     /* transform: translateY(-5px); */
     transition: 0.3s;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: translateY(-1.5rem);
 }
 
 .example__img{
@@ -955,7 +955,7 @@ button:focus{
 .individual--actived{
     background-color: #47cf73;
     transform: translateY(3px);
-    border: 2px solid black;
+    border: 3px solid black;
     width: 50%;
     height: 100%;
     font-size: 1.3rem;
@@ -986,7 +986,7 @@ button:focus{
 .team--actived {
     background-color:#ffdd40;
     transform: translateY(3px);
-    border: 2px solid black;
+    border: 3px solid black;
     width: 50%;
     height: 100%;
     font-size: 1.3rem;
