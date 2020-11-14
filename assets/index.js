@@ -20,33 +20,37 @@ BUTTON__INDIVIDUAL.addEventListener("click", individualClass);
 BUTTON__TEAM.addEventListener("click", teamActived);
 
 function individualClass() {
-  BUTTON__INDIVIDUAL.classList.toggle("individual--actived");
-  BUTTON__INDIVIDUAL.classList.toggle("plan--selection");
+  if (!BUTTON__INDIVIDUAL.classList.contains("individual--actived")) {
+    BUTTON__INDIVIDUAL.classList.toggle("individual--actived");
+    BUTTON__INDIVIDUAL.classList.toggle("plan--selection");
 
-  if (INDIVIDUALSECTION.classList.contains("individual__show--container")) {
-    INDIVIDUALSECTION.classList.remove("individual__show--container");
+    if (INDIVIDUALSECTION.classList.contains("individual__show--container")) {
+      INDIVIDUALSECTION.classList.remove("individual__show--container");
+    }
+
+    if (!TEAMSECTION.classList.contains("team__show--container")) {
+      TEAMSECTION.classList.add("team__show--container");
+    }
+
+    BUTTON__TEAM.classList.toggle("plan--selection");
+    BUTTON__TEAM.classList.toggle("team--actived");
   }
-
-  if (!TEAMSECTION.classList.contains("team__show--container")) {
-    TEAMSECTION.classList.add("team__show--container");
-  }
-
-  BUTTON__TEAM.classList.toggle("plan--selection");
-  BUTTON__TEAM.classList.toggle("team--actived");
 }
 
 function teamActived() {
-  BUTTON__TEAM.classList.toggle("plan--selection");
-  BUTTON__TEAM.classList.toggle("team--actived");
+  if (!BUTTON__TEAM.classList.contains("team--actived")) {
+    BUTTON__TEAM.classList.toggle("team--actived");
+    BUTTON__TEAM.classList.toggle("plan--selection");
 
-  if (TEAMSECTION.classList.contains("team__show--container")) {
-    TEAMSECTION.classList.remove("team__show--container");
+    if (TEAMSECTION.classList.contains("team__show--container")) {
+      TEAMSECTION.classList.remove("team__show--container");
+    }
+
+    if (!INDIVIDUALSECTION.classList.contains("individual__show--container")) {
+      INDIVIDUALSECTION.classList.add("individual__show--container");
+    }
+
+    BUTTON__INDIVIDUAL.classList.toggle("individual--actived");
+    BUTTON__INDIVIDUAL.classList.toggle("plan--selection");
   }
-
-  if (!INDIVIDUALSECTION.classList.contains("individual__show--container")) {
-    INDIVIDUALSECTION.classList.add("individual__show--container");
-  }
-
-  BUTTON__INDIVIDUAL.classList.toggle("individual--actived");
-  BUTTON__INDIVIDUAL.classList.toggle("plan--selection");
 }
