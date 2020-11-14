@@ -1447,7 +1447,15 @@ button:focus{
     margin: 0.7rem auto auto auto;
 }
 
-
+.word--pro{
+    background-color: #ffdd40;
+    width: 17%;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 600;
+}
 
 
 
