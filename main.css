@@ -1007,12 +1007,17 @@ button:focus{
     right: 78px;
 }
 
+
 .plans__individual {
     width: 1000px;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 5px;
     margin-top: 1.5rem;
+    display: block;
+}
+
+.individual__show--container{
     display: none;
 }
 
@@ -1021,7 +1026,6 @@ button:focus{
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 
 .individual__all--cards {
     display: flex;
@@ -1197,6 +1201,11 @@ button:focus{
     border: 1px solid transparent;
     border-radius: 5px;
     margin-top: 1.5rem;
+    display: block;
+}
+
+.team__show--container{
+    display: none;
 }
 
 .plans__team--top{
