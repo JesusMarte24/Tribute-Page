@@ -1457,6 +1457,14 @@ button:focus{
     font-weight: 600;
 }
 
+footer {
+    background-color: black;
+}
+
+footer address {
+    color: white;
+}
+
 
 
 /* 390x400 */
