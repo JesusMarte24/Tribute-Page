@@ -293,9 +293,8 @@ button:focus{
     color: rgb(216, 216, 216);
     font-weight: 400;
     font-size: 1.3rem;
-    margin-top: -15px;
+    margin: -15px 1rem 2px 0px;
     transition: 0.2s;
-    margin-right: 1rem;
 }
 
 .main__label--2 {
@@ -533,6 +532,13 @@ button:focus{
     margin-bottom: 0.35rem;
 }
 
+.suggestion__align--h4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+
 .suggestion__container button {
     background: #ffd40d;
     color: black;
@@ -541,24 +547,16 @@ button:focus{
     text-align: center;
     border-radius: 4px;
     padding: 10px 14px 10px;
-    opacity: 0.9;
     transition: 0.3s;
     margin-left: 1rem;
     width: 100px;
     font-weight: 600;
     font-size: 1.2rem;
-
-}
-
-.suggestion__align--h4{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
 
 .suggestion__container button:hover {
-    opacity: 1;
     cursor: pointer;
+    background-color: #ffdd40;
     transform: translateY(-3px);
 }
 
