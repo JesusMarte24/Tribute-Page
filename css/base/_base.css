@@ -1,0 +1,21 @@
+:root {
+    --first-color: rgb(27, 28, 36);
+    --second-color: rgb(120, 125, 143);
+    --third-color: rgb(37, 40, 48);
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    background-color: rgb(27, 28, 36);
+    overflow-x: hidden;
+}

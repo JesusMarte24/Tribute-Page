@@ -1,0 +1,214 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.menu__icon {
+    align-self: center;
+    margin: .7rem;
+    margin-bottom: auto;
+    transition: 0.2s;
+}
+
+.menu__icon:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: rgb(30, 31, 38);
+    overflow-x: hidden; 
+    padding-top: 45px;
+    transition: 0.5s; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.4s;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 20px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: black;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.sidenav .closebtn:hover {
+    color: #47cf73;
+    background-color: transparent;
+}
+
+.line--0 {
+    width: 188px;
+    /* border: 2px solid white;
+    border-radius: 15px; */
+    margin: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.35));
+}
+
+.header__menu--tittle{
+    color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: .01rem;
+    font-weight: 300;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.header__menu--button {
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #000;
+    border-radius: 3px;
+    margin: 15px;
+    margin-top: 0px;
+    height: 41px;
+    transition: .2s;
+    align-self: center;
+    color: white;
+    width: 144px;
+    border-top: 2px solid #fad648;
+    border-right: 2px solid #12bcfe;
+    border-bottom: 2px solid #a767e5;
+    border-left: 2px solid #4fcf70;
+    border-radius: 5px;
+}
+
+.header__menu--button:hover{
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+}
+
+.header__menu--button:active {
+    transform: translateY(-0.1rem);
+}
+
+.line--1 {
+    width: 144px;
+    margin: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,rgb(71, 207, 115), rgb(71, 207, 115), rgb(71, 207, 115));
+}
+
+.line--2 {
+    width: 144px;
+    margin: 5px;
+    margin-bottom: 10px;
+    align-self: center;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,rgb(255, 221, 64), rgb(255, 221, 64), rgb(255, 221, 64));
+}
+
+.header__input--box{
+    display: flex;
+    width: 95vw;
+    margin: 5px 10px 10px 10px;
+    height: 44px;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 0px;
+}
+
+
+.header__input--box::before {
+    content: url('../../assets/lupa.png');
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.header__input {
+    width: 100%;
+    background-color:#444857;
+    border: 0px;
+    color: white;
+    height: 100%;
+    padding-left: 50px;
+    font-size: 18px;
+    border-radius: 6px;
+    position: relative;
+    outline: none   ;
+}
+
+.header__input::placeholder{
+    justify-content: flex-start;
+    color: rgb(180, 179, 177);
+    font-size: 15px;
+}
+
+.button {
+    width: 100px;
+    font-weight: 600;
+    border: 0px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 6px;
+    height: 100%;
+    padding: 10px 10px;
+    align-self: center;
+}
+
+button:focus{
+    outline: none;
+}
+
+.header__button--sign{
+    background-color: 	#47CF73;  
+    margin-left: 20px;
+    transition: 0.2s;
+    color: black;
+}
+
+.header__button--sign:hover {
+    background-color: 	#5feb8b;  
+}
+
+.header__button--log{
+    background: #444857;
+    color: white;
+    margin-left: 20px;
+    margin-right: 0px;
+    transition: 0.2s;
+}
+
+.header__button--log:hover {
+    background: #5a6074;
+}
